@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0f;
+  --foreground: #e4e4e7;
+  --card: #131320;
+  --card-border: #1e1e3a;
+  --accent: #6366f1;
+  --valid: #10b981;
+  --invalid: #ef4444;
+  --muted: #71717a;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* Monospace for hashes and code */
+.font-hash {
+  font-family: var(--font-geist-mono), 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  word-break: break-all;
+}
+
+/* Tab content fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 200ms ease-out;
+}
+
+/* Slim scrollbar for tab bar */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 2px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+}
