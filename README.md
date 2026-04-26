@@ -4,7 +4,7 @@
 >
 > 9 章 · 58 个内页 · 5 个交互式 demo · 完全免费开源。
 
-**🔗 在线访问**：https://learning-web3.vercel.app（部署后填入实际地址）
+**🔗 在线访问**：https://learning-web3-six.vercel.app/learn
 
 ---
 
